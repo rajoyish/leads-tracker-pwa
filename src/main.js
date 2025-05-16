@@ -10,8 +10,7 @@ import {
 } from 'https://www.gstatic.com/firebasejs/11.7.1/firebase-database.js';
 
 const firebaseConfig = {
-  databaseURL:
-    'https://leads-tracker-app-d422c-default-rtdb.asia-southeast1.firebasedatabase.app/',
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
 };
 
 const app = initializeApp(firebaseConfig);
